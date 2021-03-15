@@ -19,7 +19,7 @@ Note: Validations has been implemented to avoid incorrect requests!
 ### Requests and responses for the API
 
 ## Create
-
+```
 uri = /<audio_file_type>/<audio_file_id>/
 http-method = 'POST'
 content-type = 'application/json'
@@ -40,10 +40,10 @@ request = {
     }
 }
 response = 'OK'
-
+```
 
 ## GET
-
+```
 uri = /<audio_file_type>/<audio_file_id>/
 http-method = 'GET'
 content-type = 'application/json'
@@ -61,10 +61,10 @@ response = {
     "date_uploaded": <date-time>,   # defaults to now.
     "date_last_modified": <date-time>    # defaults to now on update.
 }
-
+```
 
 ## GET
-
+```
 uri = /<audio_file_type>/
 http-method = 'GET'
 content-type = 'application/json'
@@ -86,10 +86,10 @@ response = {
         }
     ]
 }
-
+```
 
 ## Update
-
+```
 uri = /<audio_file_type>/<audio_file_id>/
 http-method = 'PUT'
 content-type = 'application/json'
@@ -110,10 +110,11 @@ request = {
     }
 }
 response = 'Podcast with ID 1 has been updated!'
-
+```
 
 ## Delete
-
+```
 uri = /<audio_file_type>/<audio_file_id>/
 http-method = 'DELETE'
 response = 'Podcast with ID 1 has been deleted!'
+```
